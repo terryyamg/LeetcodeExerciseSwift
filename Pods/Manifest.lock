@@ -1,0 +1,18 @@
+PODS:
+  - MarqueeLabel/Swift (3.0.1)
+  - R.swift (3.2.0):
+    - R.swift.Library (~> 3.0.2)
+  - R.swift.Library (3.0.2)
+
+DEPENDENCIES:
+  - MarqueeLabel/Swift
+  - R.swift
+
+SPEC CHECKSUMS:
+  MarqueeLabel: 80ba85d2b76a9f5fa6c13de337db80bcd94feb1d
+  R.swift: 207a372a2b5977caef440c696a368009460641d1
+  R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
+
+PODFILE CHECKSUM: df4fe2dfc3c471a60e7475df3d92e822902af608
+
+COCOAPODS: 1.2.0
