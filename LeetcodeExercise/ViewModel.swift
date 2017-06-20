@@ -27,7 +27,7 @@ class ViewModel : NSObject {
             questionInfo.number = desc[1]
             questionInfo.title = desc[2]
             questionInfo.detail = desc[3]
-            
+            questionInfo.level = desc[4]
             mQuestion.add(questionInfo)
         }
         

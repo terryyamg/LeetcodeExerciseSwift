@@ -21,8 +21,25 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.file` struct is generated, and contains static references to 0 files.
+  /// This `R.file` struct is generated, and contains static references to 2 files.
   struct file {
+    /// Resource file `check.png`.
+    static let checkPng = Rswift.FileResource(bundle: R.hostingBundle, name: "check", pathExtension: "png")
+    /// Resource file `question.png`.
+    static let questionPng = Rswift.FileResource(bundle: R.hostingBundle, name: "question", pathExtension: "png")
+    
+    /// `bundle.url(forResource: "check", withExtension: "png")`
+    static func checkPng(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.checkPng
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
+    /// `bundle.url(forResource: "question", withExtension: "png")`
+    static func questionPng(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.questionPng
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+    
     fileprivate init() {}
   }
   
@@ -31,8 +48,23 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 2 images.
   struct image {
+    /// Image `check`.
+    static let check = Rswift.ImageResource(bundle: R.hostingBundle, name: "check")
+    /// Image `question`.
+    static let question = Rswift.ImageResource(bundle: R.hostingBundle, name: "question")
+    
+    /// `UIImage(named: "check", bundle: ..., traitCollection: ...)`
+    static func check(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.check, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "question", bundle: ..., traitCollection: ...)`
+    static func question(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.question, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   

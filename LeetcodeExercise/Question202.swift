@@ -12,9 +12,9 @@ class Question202 : QuestionBase{
     
     override init() {
         super.init()
-        state = "0"
+        state = .Done
         number = "202"
-        title = "HappyNumber"
+        title = "Happy Number"
         detail =
             "Write an algorithm to determine if a number is 'happy'.\n" +
             " A happy number is a number defined by the following process:\n" +
@@ -31,6 +31,7 @@ class Question202 : QuestionBase{
             " 6^2 + 8^2 = 100\n" +
             " 1^2 + 0^2 + 0^2 = 1"
         //(update)note: add 7 is happy number
+        level = .Easy
     }
     
     func isHappy(_ n: Int) -> Bool {

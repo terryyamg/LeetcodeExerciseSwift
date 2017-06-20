@@ -14,5 +14,5 @@ class QuestionInfo: NSObject {
     var number : String = String()
     var title : String = String()
     var detail : String = String()
-    
+    var level : String = String()
 }
