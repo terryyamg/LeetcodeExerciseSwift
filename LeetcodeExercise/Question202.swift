@@ -39,8 +39,8 @@ class Question202 : QuestionBase{
         var sum : Int
         var length : Int
         repeat{
-            sum = getNumber(n: n, length: String(n).characters.count)
-            length = String(sum).characters.count
+            sum = getNumber(n: n, length: String(n).count)
+            length = String(sum).count
             n = sum
         }while (length != 1)
         

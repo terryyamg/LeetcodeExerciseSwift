@@ -80,9 +80,9 @@ class Question006 : QuestionBase{
         if numRows == 1 { return s }
         var ans : String = ""
         var location  = [Int]()
-        let seq = stride(from: 0, to: s.characters.count+2*(numRows-1), by: 2*(numRows-1))
+        let seq = stride(from: 0, to: s.count+2*(numRows-1), by: 2*(numRows-1))
         for i in seq {
-            if i < s.characters.count {
+            if i < s.count {
                 let index = s.index(s.startIndex, offsetBy: i)
                 ans.append(s[index])
                 print(ans)
@@ -94,14 +94,14 @@ class Question006 : QuestionBase{
         var pre = 0
         while true {
             for i in 0..<location.count {
-                if location[i] - j > 0 && location[i] - j < s.characters.count{
+                if location[i] - j > 0 && location[i] - j < s.count{
                     if location[i] - j == pre {
                         continue
                     }
                     let index = s.index(s.startIndex, offsetBy: location[i] - j)
                     ans.append(s[index])
                 }
-                if location[i] + j > 0 && location[i] + j < s.characters.count{
+                if location[i] + j > 0 && location[i] + j < s.count{
                     pre = location[i] + j
                     let index = s.index(s.startIndex, offsetBy: location[i] + j)
                     ans.append(s[index])

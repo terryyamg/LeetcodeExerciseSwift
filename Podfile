@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-target "LeetcodeExercise" do
+target "LeetcodeExerciseSwift" do
 	pod 'MarqueeLabel/Swift'
     pod 'R.swift'
 end

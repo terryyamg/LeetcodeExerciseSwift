@@ -41,7 +41,7 @@ class Question007 : QuestionBase{
         var x = x
         var ans : Double = 0.0
         var length : Int
-        length = x >= 0 ? String(x).characters.count : String(-x).characters.count
+        length = x >= 0 ? String(x).count : String(-x).count
         
         for i in (0...length).reversed() {
             let s = x % 10

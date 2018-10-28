@@ -24,10 +24,10 @@ class Question014 : QuestionBase{
         if strs.count <= 0 { return "" }
         if strs.count == 1 { return strs[0] }
         var ans : String = ""
-        var minLength = strs[0].characters.count
+        var minLength = strs[0].count
         for item in strs {
-            if item.characters.count < minLength {
-                minLength = item.characters.count
+            if item.count < minLength {
+                minLength = item.count
             }
         }
         

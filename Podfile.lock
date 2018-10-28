@@ -1,18 +1,24 @@
 PODS:
-  - MarqueeLabel/Swift (3.0.1)
-  - R.swift (3.2.0):
-    - R.swift.Library (~> 3.0.2)
-  - R.swift.Library (3.0.2)
+  - MarqueeLabel/Swift (3.1.4)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
 
 DEPENDENCIES:
   - MarqueeLabel/Swift
   - R.swift
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MarqueeLabel
+    - R.swift
+    - R.swift.Library
+
 SPEC CHECKSUMS:
-  MarqueeLabel: 80ba85d2b76a9f5fa6c13de337db80bcd94feb1d
-  R.swift: 207a372a2b5977caef440c696a368009460641d1
-  R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
+  MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
 
-PODFILE CHECKSUM: df4fe2dfc3c471a60e7475df3d92e822902af608
+PODFILE CHECKSUM: 1d3b60e69d70a7ae0a9463307e0638ec8b310ea7
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.3
